@@ -29,8 +29,8 @@
 - `set_ps1_default.bat`：尝试把 `.ps1` 的双击默认打开方式设置为 PowerShell（Win10/11 可能因为 UserChoice 保护而无法强制覆盖；脚本会输出检测结果与手动设置提示）
 
 也可以在 PowerShell / Windows Terminal 中手动运行（建议以管理员身份启动终端）：
-cd "脚本所在目录"
 ```powershell
+cd "这里替换为脚本所在目录"
 powershell.exe -ExecutionPolicy Bypass -File ".\清理系统path_Pro_公开版.ps1"
 powershell.exe -ExecutionPolicy Bypass -File ".\清理系统path_Plus_公开版.ps1"
 ```
@@ -113,4 +113,5 @@ $code = @'
 
 本项目使用 GPL-3.0-only 开源。详情请查看仓库根目录的 `LICENSE` 文件或访问 [GNU 官方网站](https://www.gnu.org/licenses/gpl-3.0.html)。
 GPL-3.0 的非官方中文翻译可参考 [jxself 译文](https://jxself.org/translations/gpl-3.zh.shtml)（非 FSF 官方发布，法律效力以英文原文为准）；其他语言版本见 [GNU 翻译页面](https://www.gnu.org/licenses/translations.html)。
+
 
