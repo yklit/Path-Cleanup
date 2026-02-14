@@ -14,7 +14,7 @@
 
 ## 使用方式
 
-请先使用git克隆此仓库到本地电脑或者下载压缩包解压到本地目录。
+请先使用git克隆此仓库到本地电脑或者下载压缩包解压到本地目录。(运行前先右键ps1和bat脚本打开属性取消掉类似于自动阻止的勾选并点击应用)
 
 推荐直接双击运行 BAT 启动器（不依赖系统把 `.ps1` 默认关联到 PowerShell）：
 
@@ -107,3 +107,4 @@ $code = @'
 
 本项目使用 GPL-3.0-only 开源。详情请查看仓库根目录的 `LICENSE` 文件或访问 [GNU 官方网站](https://www.gnu.org/licenses/gpl-3.0.html)。
 GPL-3.0 的非官方中文翻译可参考 [jxself 译文](https://jxself.org/translations/gpl-3.zh.shtml)（非 FSF 官方发布，法律效力以英文原文为准）；其他语言版本见 [GNU 翻译页面](https://www.gnu.org/licenses/translations.html)。
+
