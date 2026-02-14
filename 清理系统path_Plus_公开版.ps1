@@ -1,4 +1,27 @@
 ﻿#requires -version 5.1
+try {
+    $self = $PSCommandPath
+    if ($self -and (Test-Path -LiteralPath $self)) {
+        $zone = Get-Item -LiteralPath $self -Stream Zone.Identifier -ErrorAction SilentlyContinue
+        if ($zone) {
+            Remove-Item -LiteralPath $self -Stream Zone.Identifier -ErrorAction SilentlyContinue
+            Write-Host "[安全提示] 检测到来自 Internet 标记，已自动解除。" -ForegroundColor Yellow
+        }
+    }
+}
+catch {}
+
+try {
+    $root = Split-Path -Parent $PSCommandPath
+    Get-ChildItem -Path $root -Recurse -File -ErrorAction SilentlyContinue |
+        ForEach-Object {
+            if (Get-Item -LiteralPath $_.FullName -Stream Zone.Identifier -ErrorAction SilentlyContinue) {
+                Remove-Item -LiteralPath $_.FullName -Stream Zone.Identifier -ErrorAction SilentlyContinue
+            }
+        }
+}
+catch {}
+
 try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($true) } catch {}
 
 $ScriptVersion = "Path Plus v8 Full (2026-02-13)"

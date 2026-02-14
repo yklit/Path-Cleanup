@@ -10,6 +10,8 @@ if /i "%~1"=="/y" set "ans=Y"
 if /i "%~2"=="/y" set "ans=Y"
 set "PSH=%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe"
 set "REG=%SystemRoot%\System32\reg.exe"
+set "ROOT=%~dp0"
+"%PSH%" -NoProfile -ExecutionPolicy Bypass -Command "try { $root=$env:ROOT; Get-ChildItem -LiteralPath $root -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { if (Get-Item -LiteralPath $_.FullName -Stream Zone.Identifier -ErrorAction SilentlyContinue) { Remove-Item -LiteralPath $_.FullName -Stream Zone.Identifier -ErrorAction SilentlyContinue } } } catch {}" >nul 2>&1
 
 if not defined ans (
   "%PSH%" -NoProfile -ExecutionPolicy Bypass -EncodedCommand JABhAG4AcwAgAD0AIABSAGUAYQBkAC0ASABvAHMAdAAgACIABlwdXNWLimIgAC4AcABzADEAIADYnqSLU2IAX7llD1++i25/Ok4gAFcAaQBuAGQAbwB3AHMAIABQAG8AdwBlAHIAUwBoAGUAbABsAAIw537tfmdiTIgf/ygAWQAvAE4AKQAiAAoAaQBmACAAKAAkAGEAbgBzACAALQBuAG8AdABpAG4AIABAACgAJwBZACcALAAnAHkAJwApACkAIAB7ACAAZQB4AGkAdAAgADEAIAB9AAoAZQB4AGkAdAAgADAA
