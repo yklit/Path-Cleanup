@@ -19,7 +19,7 @@
 - 运行前先右键ps1和bat脚本打开属性取消类似于自动阻止的勾选并点击应用，因为Windows默认会阻止在网络上下载的脚本运行。
 - 虽然说脚本运行时也会自动解除这个标记但是也有概率无法自动解除,最好还是手动解除一下
 
-如果PS1已经关联了power shell推荐直接双击ps1脚本运行：
+如果`.ps1`已经关联了power shell推荐直接双击ps1脚本运行：
 
 - `清理系统path_Plus_公开版.ps1`（需要时会弹出 UAC 请求管理员权限）
 - `清理系统path_Pro_公开版.ps1`（需要时会弹出 UAC 请求管理员权限）
@@ -115,6 +115,7 @@ $code = @'
 
 本项目使用 GPL-3.0-only 开源。详情请查看仓库根目录的 `LICENSE` 文件或访问 [GNU 官方网站](https://www.gnu.org/licenses/gpl-3.0.html)。
 GPL-3.0 的非官方中文翻译可参考 [jxself 译文](https://jxself.org/translations/gpl-3.zh.shtml)（非 FSF 官方发布，法律效力以英文原文为准）；其他语言版本见 [GNU 翻译页面](https://www.gnu.org/licenses/translations.html)。
+
 
 
 
