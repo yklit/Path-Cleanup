@@ -115,13 +115,3 @@ $code = @'
 
 本项目使用 GPL-3.0-only 开源。详情请查看仓库根目录的 `LICENSE` 文件或访问 [GNU 官方网站](https://www.gnu.org/licenses/gpl-3.0.html)。
 GPL-3.0 的非官方中文翻译可参考 [jxself 译文](https://jxself.org/translations/gpl-3.zh.shtml)（非 FSF 官方发布，法律效力以英文原文为准）；其他语言版本见 [GNU 翻译页面](https://www.gnu.org/licenses/translations.html)。
-
-
-
-
-
-
-
-
-
-
