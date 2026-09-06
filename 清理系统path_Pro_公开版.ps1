@@ -445,8 +445,8 @@ function Show-MainMenu {
     Write-Host ""
     Write-Host ("版本：{0}" -f $ScriptVersion) -ForegroundColor DarkGray
     Write-Host ("脚本路径：{0}" -f $PSCommandPath) -ForegroundColor DarkGray
-    Write-Host "GitHub作者:yklit" -ForegroundColor DarkGray
-    Write-Host "项目开源地址:https://github.com/yklit/Path-Cleanup" -ForegroundColor DarkGray
+    Write-Host "GitHub作者:tidain" -ForegroundColor DarkGray
+    Write-Host "项目开源地址:https://github.com/tidain/Path-Cleanup" -ForegroundColor DarkGray
     Write-Host ""
     Write-Host "⚠️ 免责声明与用户协议：" -ForegroundColor Red
     Write-Host "1. 此脚本会修改系统注册表（HKLM\SYSTEM\...\Environment），仅建议熟悉系统的用户使用"
